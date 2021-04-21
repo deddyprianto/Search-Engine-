@@ -3,16 +3,15 @@ import Header from "../components/Header";
 import { useRouter } from "next/router";
 import SearchResults from "../components/SearchResults";
 import { API_KEY, CONTEXT_KEY } from "../keys";
+
 function Search({ results }) {
-  console.log(results);
   const router = useRouter();
   return (
-    <div>
+    <div className="dark__mode">
       <Head>
         <title>{router.query.term} - Google Search </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* header */}
       <Header />
       <SearchResults result={results} />
     </div>

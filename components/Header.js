@@ -14,20 +14,22 @@ function Header() {
     router.push(`/search?term=${term}`);
   };
   return (
-    <header className="sticky top-0 bg-white">
+    <header className="sticky top-0 dark__mode w-full">
       <div className="flex w-full p-6">
         <Image
-          src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-          height={0}
-          width={100}
+          src="/Doogle.png"
+          height={10}
+          width={170}
           onClick={() => router.push("/")}
           className="cursor-pointer"
         />
+        {/* FORM */}
         <form className="flex flex-grow px-6 py-3 border border-gray-200 rounded-full shadow-lg max-w-3xl items-center ml-10 mr-5">
           <input
             ref={searchInputRef}
             type="text"
-            className="flex-grow w-full focus:outline-none"
+            className="dark__mode flex-grow w-full focus:outline-none text-gray-200"
+            placeholder="Cari disini..."
           />
           <XIcon
             className="h-7 text-gray-500 cursor-pointer transition duration-100 transform hover:scale-125"

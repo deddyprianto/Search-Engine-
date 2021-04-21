@@ -9,7 +9,7 @@ import {
 } from "@heroicons/react/outline";
 function HeaderOptions() {
   return (
-    <div className="flex w-full justify-evenly text-gray-700 text-sm lg:text-base lg:justify-start lg:space-x-36 lg:pl-52 border-b">
+    <div className="flex w-full justify-evenly text-gray-300 text-sm lg:text-base lg:justify-start lg:space-x-36 lg:pl-52 border-b">
       {/* left */}
       <div className="flex space-x-6">
         <HeaderOption Icon={SearchIcon} title="All" selected />

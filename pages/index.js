@@ -16,14 +16,14 @@ export default function Home() {
     router.push(`/search?term=${term}`);
   };
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <div className="flex flex-col items-center justify-center h-screen dark__mode">
       <Head>
         <title>Google</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <header className="flex w-full p-5 justify-between text-sm text-gray-700">
+      <header className="flex w-full p-5 justify-between text-sm text-gray-200">
         {/* header left */}
         <div className="flex space-x-4 items-center">
           <p className="link">About</p>
@@ -39,26 +39,22 @@ export default function Home() {
       </header>
       {/* Body */}
       <form className="flex flex-col items-center flex-grow mt-44 w-4/5">
-        <Image
-          height="100"
-          width="300"
-          src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-        />
+        <Image height="150" width="550" src="/Doogle.png" />
         <div className="flex w-full mt-5 hover:shadow-lg rounded-full focus-within:shadow-lg max-w-md border border-gray-200 px-5 py-3 items-center sm:max-w-xl lg:max-w-2xl">
           <SearchIcon className="h-5 mr-3 text-gray-500" />
           <input
             ref={inputRef}
             type="text"
-            className="flex-grow focus:outline-none"
+            className="flex-grow focus:outline-none text-white dark__mode"
           />
-          <MicrophoneIcon className="h-5" />
+          <MicrophoneIcon className="h-5 text-white" />
         </div>
         <div className="flex flex-col w-1/2 justify-center mt-8 space-y-2 sm:flex-row sm:space-x-2 sm:space-y-0">
           <button onClick={search} className="btn">
-            Google Search
+            Google Pencarian
           </button>
           <button onClick={search} className="btn">
-            I am Lucky for Fun
+            i am Happy
           </button>
         </div>
       </form>
