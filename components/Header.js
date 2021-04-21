@@ -21,7 +21,7 @@ function Header() {
           height={10}
           width={170}
           onClick={() => router.push("/")}
-          className="cursor-pointer"
+          className="cursor-pointer hidden"
         />
         {/* FORM */}
         <form className="flex flex-grow px-6 py-3 border border-gray-200 rounded-full shadow-lg max-w-3xl items-center ml-10 mr-5">
